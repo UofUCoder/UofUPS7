@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6E6913FA-CAB6-4D3C-A55D-39D148E1206F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Resources</RootNamespace>
+    <AssemblyName>Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Libraries\SnakeAIClient\HeadlessAIClient.exe.config" />
+    <None Include="Libraries\SnakeClient\SnakeProto.exe.config" />
+    <None Include="Libraries\SnakeServer\Server.exe.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libraries\SnakeAIClient\CommonDefs.dll" />
+    <Content Include="Libraries\SnakeAIClient\Food.dll" />
+    <Content Include="Libraries\SnakeAIClient\HeadlessAIClient.exe" />
+    <Content Include="Libraries\SnakeAIClient\Martin-Berube-Square-Animal-Snake.ico" />
+    <Content Include="Libraries\SnakeAIClient\Network_Support.dll" />
+    <Content Include="Libraries\SnakeAIClient\Newtonsoft.Json.dll" />
+    <Content Include="Libraries\SnakeAIClient\Point.dll" />
+    <Content Include="Libraries\SnakeAIClient\Snake.dll" />
+    <Content Include="Libraries\SnakeAIClient\SnakeWorld.dll" />
+    <Content Include="Libraries\SnakeClient\CommonDefs.dll" />
+    <Content Include="Libraries\SnakeClient\Food.dll" />
+    <Content Include="Libraries\SnakeClient\Martin-Berube-Square-Animal-Snake.ico" />
+    <Content Include="Libraries\SnakeClient\Network_Support.dll" />
+    <Content Include="Libraries\SnakeClient\Newtonsoft.Json.dll" />
+    <Content Include="Libraries\SnakeClient\Point.dll" />
+    <Content Include="Libraries\SnakeClient\Snake.dll" />
+    <Content Include="Libraries\SnakeClient\SnakeProto.exe" />
+    <Content Include="Libraries\SnakeClient\SnakeWorld.dll" />
+    <Content Include="Libraries\SnakeServer\CommonDefs.dll" />
+    <Content Include="Libraries\SnakeServer\Food.dll" />
+    <Content Include="Libraries\SnakeServer\network_server.ico" />
+    <Content Include="Libraries\SnakeServer\Network_Support.dll" />
+    <Content Include="Libraries\SnakeServer\Newtonsoft.Json.dll" />
+    <Content Include="Libraries\SnakeServer\Point.dll" />
+    <Content Include="Libraries\SnakeServer\Server.exe" />
+    <Content Include="Libraries\SnakeServer\settings.xml" />
+    <Content Include="Libraries\SnakeServer\Snake.dll" />
+    <Content Include="Libraries\SnakeServer\SnakeWorld.dll" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
